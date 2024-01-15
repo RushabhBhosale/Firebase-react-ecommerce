@@ -1,0 +1,43 @@
+footer {
+   background-color: var(--primary-color);
+   padding-top: 60px;
+   padding-bottom: 30px;
+}
+
+.footer-text {
+   color: #ffffffa9;
+   line-height: 30px;
+   text-align: justify;
+}
+
+.footer-quick-links ul li {
+   background-color: transparent;
+}
+
+.footer-quick-links ul li a {
+   color: #ffffffa9;
+}
+
+.footer-quick-links ul li a:hover {
+   color: #ffffffa9;
+}
+
+.quick-links-title {
+   font-size: 1.1rem;
+   color: #fff;
+   padding-bottom: 20px;
+}
+
+.footer-contact li {
+   color: #ffffffa9;
+}
+
+.footer-contact li span {
+   font-size: 1.1rem;
+}
+
+.footer-copyright {
+   font-size: 0.9rem;
+   text-align: center;
+   margin-top: 40px;
+}
