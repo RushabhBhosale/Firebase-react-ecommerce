@@ -1,24 +1,26 @@
-import React, { useEffect, useState } from 'react'
-import Helmet from '../components/Helmet/Helmet'
-import { Col, Container, Row } from 'reactstrap'
-import heroImg from '../assets/images/hero-img.png'
-import '../styles/Home.css'
-import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
-import Services from '../services/Services'
-import ProductList from '../components/UI/ProductList'
-import products from '../assets/data/products'
-import counterImg from '../assets/images/counter-timer-img.png'
-import Clock from '../components/UI/Clock'
+import React, { useEffect, useState } from 'react';
+import Helmet from '../components/Helmet/Helmet';
+import { Col, Container, Row } from 'reactstrap';
+import heroImg from '../assets/images/hero-img.png';
+import '../styles/Home.css';
+import { motion } from 'framer-motion';
+import { Link, useLocation } from 'react-router-dom';
+import Services from '../services/Services';
+import ProductList from '../components/UI/ProductList';
+import products from '../assets/data/products';
+import counterImg from '../assets/images/counter-timer-img.png';
+import Clock from '../components/UI/Clock';
 
 const Home = () => {
+  const location = useLocation();
+  const isShopPage = location.pathname === '/shop';
 
   const [trendingProducts, setTrendingProducts] = useState([]);
   const [bestSalesProducts, setBestSalesProducts] = useState([]);
   const [mobileProducts, setMobileProducts] = useState([]);
   const [wirelessProducts, setWirelessProducts] = useState([]);
   const [popularProducts, setPopularProducts] = useState([]);
-  const year = new Date().getFullYear()
+  const year = new Date().getFullYear();
 
   useEffect(() => {
     const filteredTrendingProducts = products.filter(item => item.category === 'chair');
@@ -35,7 +37,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Helmet title={"Home"} >
+    <Helmet title={'Home'}>
       <section className='hero-section'>
         <Container>
           <Row>
@@ -65,7 +67,7 @@ const Home = () => {
             <Col lg='12' className='text-center'>
               <h2 className='section-title'>Trending Products</h2>
             </Col>
-            <ProductList data={trendingProducts} />
+            <ProductList data={trendingProducts} isShopPage={isShopPage} />
           </Row>
         </Container>
       </section>
@@ -76,7 +78,7 @@ const Home = () => {
             <Col lg='12' className='text-center'>
               <h2 className='section-title'>Best Sales</h2>
             </Col>
-            <ProductList data={bestSalesProducts} />
+            <ProductList data={bestSalesProducts} isShopPage={isShopPage} />
           </Row>
         </Container>
       </section>
@@ -106,8 +108,8 @@ const Home = () => {
             <Col lg='12' className='text-center'>
               <h2 className='section-title'>New Arrivals</h2>
             </Col>
-            <ProductList data={wirelessProducts} />
-            <ProductList data={mobileProducts} />
+            <ProductList data={wirelessProducts} isShopPage={isShopPage} />
+            <ProductList data={mobileProducts} isShopPage={isShopPage} />
           </Row>
         </Container>
       </section>
@@ -118,17 +120,12 @@ const Home = () => {
             <Col lg='12' className='text-center'>
               <h2 className='section-title'>Popular in Category</h2>
             </Col>
-            <ProductList data={popularProducts} />
+            <ProductList data={popularProducts} isShopPage={isShopPage} />
           </Row>
         </Container>
       </section>
-
-
-
-
     </Helmet>
+  );
+};
 
-  )
-}
-
-export default Home
+export default Home;

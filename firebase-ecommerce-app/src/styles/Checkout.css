@@ -1,0 +1,32 @@
+.billing-form .form-group input {
+   border: 1px solid var(--card-bg-02);
+}
+
+.checkout-cart {
+   padding: 20px;
+   background: var(--primary-color);
+   color: #fff;
+   border-radius: 5px;
+}
+
+.checkout-cart h4, h6 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.checkout-cart h6 {
+   margin-bottom: 20px;
+}
+
+.checkout-cart h4 {
+   border-top: 1px solid #ffffff;
+   padding-top: 20px;
+}
+
+.auth-btn {
+   background-color: #fff;
+   color: var(--primary-color);
+   font-weight: 600;
+   font-size: 1.1rem;
+}

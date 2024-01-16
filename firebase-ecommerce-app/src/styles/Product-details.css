@@ -1,0 +1,121 @@
+.product-details {
+   margin-top: 70px;
+}
+
+.product-details h2 {
+   font-size: 1.6rem;
+   margin-bottom: 10px;
+}
+
+.product-details span i {
+   color: coral;
+}
+
+.product-details p span {
+   color: coral;
+   font-weight: 500;
+}
+
+.product-price {
+   font-size: 1.3rem;
+   font-weight: 500;
+}
+
+.product-category {
+   color: var(--primary-color);
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+
+.product-image {
+   height: 400px;
+   object-fit: contain;
+}
+
+.tab-wrapper {
+   color: var(--primary-color);
+   font-weight: 500;
+   font-style: 1rem;
+}
+
+.tab-wrapper h6 {
+   cursor: pointer;
+}
+
+.tab-content p {
+   line-height: 30px;
+}
+
+.active-tab {
+   font-weight: 600;
+}
+
+.review-wrapper ul li span {
+   color: coral;
+   font-weight: 600;
+}
+
+.review-wrapper ul li p {
+   margin-top: 10px;
+}
+
+.review-form {
+   width: 70%;
+   margin-top: 50px;
+}
+
+.review-form h4 {
+   font-size: 1.2rem;
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+
+.form-group input,
+.form-group textarea {
+   width: 100%;
+   padding: 8px 20px;
+   border: 1px solid var(--primary-color);
+   border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea {
+   outline: none;
+}
+
+.form-group {
+   margin-bottom: 30px;
+}
+
+.form-group span {
+   color: coral;
+   display: flex;
+   align-items: center;
+   column-gap: 5px;
+   cursor: pointer;
+}
+
+.related-title {
+   font-size: 1.2rem;
+   font-weight: 600;
+   margin-top: 40px;
+   text-align: center;
+}
+
+@media (max-width: 768px) {
+   .buy-btn {
+      margin-top: 0;
+   }
+
+   .product-image {
+      height: 300px;
+      object-fit: contain;
+   }
+}
+
+@media (max-width: 576px) {
+   .product-image {
+      height: 150px;
+      object-fit: contain;
+   }
+}

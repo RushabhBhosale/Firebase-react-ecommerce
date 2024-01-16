@@ -1,0 +1,26 @@
+.table tr td img {
+   width: 100px !important;
+   height: 100px !important;
+   object-fit: contain;
+}
+
+td span {
+   cursor: pointer;
+}
+
+td,
+th {
+   color: var(--primary-color);
+}
+
+td {
+   font-weight: 500;
+   font-size: 18px;
+}
+
+@media (max-width: 576px) {
+   .subtitle {
+      gap: 13rem !important;
+    margin-bottom: 20px;
+   }
+}
