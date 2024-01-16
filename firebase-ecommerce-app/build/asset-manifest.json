@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.e474cef9.css",
-    "main.js": "/static/js/main.d8575a39.js",
+    "main.css": "/static/css/main.75cccdc0.css",
+    "main.js": "/static/js/main.95e6cff1.js",
+    "static/media/leaves-autumn-forest.jpg": "/static/media/leaves-autumn-forest.270e1591eb0b5e90f2ee.jpg",
     "static/media/single-sofa-01.jpg": "/static/media/single-sofa-01.db24b9feed7582c4e98d.jpg",
     "static/media/arm-chair-03.jpg": "/static/media/arm-chair-03.3249f382638c86196acd.jpg",
     "static/media/single-sofa-03.jpg": "/static/media/single-sofa-03.0d976c067034347df78d.jpg",
@@ -32,11 +33,11 @@
     "static/media/wireless-03.png": "/static/media/wireless-03.102199ac2c306820fe70.png",
     "static/media/wireless-01.png": "/static/media/wireless-01.1a76d777727c50ca0294.png",
     "index.html": "/index.html",
-    "main.e474cef9.css.map": "/static/css/main.e474cef9.css.map",
-    "main.d8575a39.js.map": "/static/js/main.d8575a39.js.map"
+    "main.75cccdc0.css.map": "/static/css/main.75cccdc0.css.map",
+    "main.95e6cff1.js.map": "/static/js/main.95e6cff1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e474cef9.css",
-    "static/js/main.d8575a39.js"
+    "static/css/main.75cccdc0.css",
+    "static/js/main.95e6cff1.js"
   ]
 }

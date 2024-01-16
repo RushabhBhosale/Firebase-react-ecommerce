@@ -41,14 +41,14 @@ const Header = () => {
    const location = useLocation();
    const fullname = location.state?.fullname;
    const password = location.state?.password;
-   const text = fullname || password || 'Guest';
+   const text = fullname || password || 'Rushabh';
 
    return (
       <header className='header' ref={headerRef}>
          <Container>
             <Row>
                <div className="nav-wrapper">
-                  <Link to='/'>
+                  <Link to='/home'>
                      <div className="logo">
                         <img src={logo} alt="logo" />
                         <div>
